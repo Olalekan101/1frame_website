@@ -2,8 +2,8 @@ import type { Metadata } from "next";
 import { Outfit } from "next/font/google";
 import "../globals.css";
 import BGshapes from "@/modules/BGshapes";
-import HealthNavbar from "@/modules/HealthNavbar";
-import HealthFooter from "@/modules/HealthFooter";
+import HealthNavbar from "@/modules/Health/HealthNavbar";
+import HealthFooter from "@/modules/Health/HealthFooter";
 
 const ibm = Outfit({ subsets: ["latin"], weight: "500" });
 

@@ -1,7 +1,7 @@
 import Link from "next/link";
 import React from "react";
 import { RxHamburgerMenu } from "react-icons/rx";
-import { SideBarMenu } from "./SideBarMenu";
+import { SideBarMenu } from "../SideBarMenu";
 import Image from "next/image";
 
 export default function Navbar() {
@@ -9,7 +9,7 @@ export default function Navbar() {
     <section className=" border-b-[1px] border-b-slate-100/50 w-full py-4  ">
       <div className="maincontainer relative flex justify-between items-center">
         <div className="">
-          <Link href={"/"}>
+          <Link href={"/1frame-tutorial"}>
             <div className="relative ">
               <Image
                 src={"/logo/1frame.png"}
@@ -30,7 +30,7 @@ export default function Navbar() {
             <Link href={"/2danimation"}>2D Animation</Link>
           </div>
           <div className="">
-            <Link href={"/Font-end"}>Font-end Development</Link>
+            <Link href={"/font-end"}>Font-end Development</Link>
           </div>
         </div>
         <div className="z-10 block md:hidden">

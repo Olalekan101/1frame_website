@@ -1,10 +1,10 @@
 import React from "react";
-import HealthHeroSection from "@/modules/HealthHeroSection";
-import HealthSectionOne from "@/modules/HealthSectionOne";
-import HealthSectionTwo from "@/modules/HealthSectionTwo";
+import HealthHeroSection from "@/modules/Health/HealthHeroSection";
+import HealthSectionOne from "@/modules/Health/HealthSectionOne";
+import HealthSectionTwo from "@/modules/Health/HealthSectionTwo";
 import "../../globals.css";
-import HealthSectionThree from "@/modules/HealthSectionThree";
-import HealthSectionFour from "@/modules/HealthSectionFour";
+import HealthSectionThree from "@/modules/Health/HealthSectionThree";
+import HealthSectionFour from "@/modules/Health/HealthSectionFour";
 
 export default function HealthMediaHeroSection() {
   return (

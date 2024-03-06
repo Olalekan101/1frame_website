@@ -4,7 +4,7 @@ import "../globals.css";
 import Navbar from "@/modules/Navbar";
 import BGshapes from "@/modules/BGshapes";
 import { TbLayoutNavbar } from "react-icons/tb";
-import ToturialNavbar from "@/modules/ToturialNavbar";
+import ToturialNavbar from "@/modules/Tutorial/TutorialNavbar";
 
 const ibm = Outfit({ subsets: ["latin"], weight: "500" });
 

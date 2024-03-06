@@ -24,7 +24,7 @@ export function HealthSideBarMenu() {
             <Link href={"/portfolio"}>Portfolio</Link>
           </div>
           <div className="">
-            <Link href={"/about "}> About Us</Link>
+            <Link href={"/about-health-media"}> About Us</Link>
           </div>
           <div className="">
             <Link href={"/content-calendar"}>Content Calendar</Link>

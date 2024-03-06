@@ -32,7 +32,7 @@ export default function Navbar() {
             <Link href={"/pricing"}> Pricing</Link>
           </div>
           <div className="">
-            <Link href={"/about "}> About Us</Link>
+            <Link href={"/about-health-media "}> About Us</Link>
           </div>
         </div>
         <div className="z-10 block md:hidden">

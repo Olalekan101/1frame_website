@@ -3,7 +3,7 @@ import Link from "next/link";
 import React from "react";
 import { FaWhatsappSquare } from "react-icons/fa";
 import Image from "next/image";
-import { ContactPopover } from "./ContactPopover";
+import { ContactPopover } from "../ContactPopover";
 import { healthcareProviderData } from "@/data/sitedata";
 
 export default function HealthHeroSection() {

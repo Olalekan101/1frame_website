@@ -20,62 +20,35 @@ export default function HeroSection() {
   ];
   return (
     <section className="w-screen md:w-full h-auto py-0 md:py-4 relative">
-      <div className="maincontainer flex flex-col md:flex-row justify-between items-start md:items-start w-full h-auto">
-        <div className="flex flex-col justify-start items-start w-full h-auto">
-          <div className="flex flex-col gap-2 w-full">
+      <div className="maincontainer flex flex-col justify-between items-center  w-full h-auto">
+        <div className="flex flex-col justify-center items-center w-full h-auto">
+          <div className="flex flex-col justify-center items-center gap-2 w-full">
             <p className="text-xs md:text-base pb-2 opacity-50">
               Video Editing . Motion Design . 2D Animation
             </p>
-            <h1 className="text-3xl">
-              We are creatives who create educational and engaging health
-              content for health care providers.
-            </h1>
-            <p className="text-sm font-thin opacity-40">
-              I have worked on several projects, which has given me the
-              experience and ability to deliver top-notch results.
-            </p>
+            <h1 className="text-3xl">We are creatives.</h1>
           </div>
-          <div className="flex flex-col md:flex-row justify-center md:justify-start items-center gap-2 mt-8 mx-auto md:mx-0">
+          {/* <div className="flex flex-col md:flex-row justify-center md:justify-start items-center gap-2 mt-8 mx-auto md:mx-0">
             <div className="z-10">
               <ContactPopover />
             </div>
             <div className="">
               <Link href={"/portfolio"}>
-                <p className="opacity-80 underline">Check out my portfolio</p>
+                <p className="opacity-80 underline">Check out our portfolio</p>
               </Link>
             </div>
-          </div>
-          <div className="mt-4 flex flex-col gap-4">
-            <div className="">
-              <p className="text-sm">
-                Health care provider we have worked with
-              </p>
-            </div>
-            <div className="">
-              {/* {iconspaths.map((x, index) => Icons(PATHMAIN + x))} */}
-              {healthcareProviderData.map((val, index) => (
-                <div className="relative w-[100px] h-[50px] opacity-70">
-                  <Image
-                    src={val.logo}
-                    alt={val.name}
-                    className="object-contain h-fit w-full"
-                    fill
-                  />
-                </div>
-              ))}
-            </div>
-          </div>
+          </div> */}
         </div>
 
-        <div className="w-full h-[500px] z-20 relative flex justify-center items-start gap-4">
-          <div className="absolute  aspect-square w-[90%] border-2  rounded-xl overflow-clip ">
+        <div className="w-full h-[200px] z-20 relative flex justify-center items-start gap-4 overflow-clip bg-MainPurple mt-10 rounded-xl">
+          {/* <div className="absolute  aspect-video w-[90%] border-2  rounded-xl overflow-clip ">
             <Image
               src={"/Images/Hero_Image.webp"}
               fill
               alt="placeholder"
               className="object-contain h-full w-full"
             />
-          </div>
+          </div> */}
         </div>
       </div>
     </section>
