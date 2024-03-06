@@ -24,10 +24,10 @@ export default function Navbar() {
 
         <div className="md:flex justify-center items-center hidden gap-4 font-light opacity-70 ">
           <div className="">
-            <Link href={"/portfolio"}>Portfolio</Link>
+            <Link href={"/tutorial"}>Tutorial</Link>
           </div>
           <div className="">
-            <Link href={"/content-calendar"}> Content Calender</Link>
+            <Link href={"/healthmedia"}>Health Media</Link>
           </div>
           <div className="">
             <Link href={"/about "}> About Us</Link>

@@ -5,22 +5,38 @@ import {
   PopoverContent,
   PopoverTrigger,
 } from "@/components/ui/popover";
-import Link from "next/link";
-import { FaWhatsappSquare } from "react-icons/fa";
+import { FaWhatsappSquare, FaPhoneAlt } from "react-icons/fa";
+import { MdAlternateEmail } from "react-icons/md";
 
 export function ContactPopover() {
   return (
     <Popover>
       <PopoverTrigger asChild>
-        <Button variant="outline">Contact Me</Button>
+        <Button variant="outline">Contact Us</Button>
       </PopoverTrigger>
-      <PopoverContent className="w-80">
-        <div className="grid gap-4 ">
-          <Link href={"/"}>
+      <PopoverContent className="w-fit py-2 px-4 bg-white rounded-2xl overflow-clip">
+        <div className="flex gap-4 ">
+          <a href={"https://wa.me/+2347010174548"}>
             <div className="">
-              <FaWhatsappSquare size={35} className="text-green-500" />
+              <FaWhatsappSquare className="text-MainPurple size-[20px] md:size-[35px]" />
             </div>
-          </Link>
+          </a>
+          <a href={"tel:+2347010174548"}>
+            <div className="">
+              <FaPhoneAlt
+                size={35}
+                className="text-MainPurple size-[20px] md:size-[35px]"
+              />
+            </div>
+          </a>
+          <a href={"mailto:+2347010174548"}>
+            <div className="">
+              <MdAlternateEmail
+                size={35}
+                className="text-MainPurple size-[20px] md:size-[35px]"
+              />
+            </div>
+          </a>
         </div>
       </PopoverContent>
     </Popover>

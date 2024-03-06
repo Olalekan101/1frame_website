@@ -1,21 +1,20 @@
 import Link from "next/link";
 import React from "react";
-import { RxHamburgerMenu } from "react-icons/rx";
-import { SideBarMenu } from "./SideBarMenu";
 import Image from "next/image";
+import { HealthSideBarMenu } from "./HealthSideBarMenu";
 
 export default function Navbar() {
   return (
     <section className=" border-b-[1px] border-b-slate-100/50 w-full py-4  ">
       <div className="maincontainer relative flex justify-between items-center">
         <div className="">
-          <Link href={"/"}>
+          <Link href={"/healthmedia"}>
             <div className="relative ">
               <Image
-                src={"/logo/1frame.png"}
-                alt="1frame logo"
-                width={100}
-                height={50}
+                src={"/Images/1frame health media.png"}
+                alt="1frame health media logo"
+                width={150}
+                height={100}
                 className=""
               />
             </div>
@@ -30,11 +29,14 @@ export default function Navbar() {
             <Link href={"/content-calendar"}> Content Calender</Link>
           </div>
           <div className="">
+            <Link href={"/pricing"}> Pricing</Link>
+          </div>
+          <div className="">
             <Link href={"/about "}> About Us</Link>
           </div>
         </div>
         <div className="z-10 block md:hidden">
-          <SideBarMenu />
+          <HealthSideBarMenu />
         </div>
       </div>
     </section>
