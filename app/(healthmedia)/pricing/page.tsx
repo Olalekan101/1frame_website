@@ -7,25 +7,26 @@ export default function Pricing() {
     currency: "NGN",
     minimumFractionDigits: 2,
   });
+  const services = [
+    ["Shoot and edit 4 Videos", "Shoot and edit 6 Videos"],
+    ["2 animated content", "4 animated content"],
+    "Landing Pages for services rendered",
+  ];
   const data = [
     {
       name: "Gold",
       price: 250000,
       list: [
         {
-          word: "6 edited videos",
+          word: services[0][0],
           boolean: true,
         },
         {
-          word: "4 animated content",
+          word: services[1][0],
           boolean: true,
         },
         {
-          word: "Assist with taking the videos.",
-          boolean: true,
-        },
-        {
-          word: "Landing Pages for services rendered",
+          word: services[2],
           boolean: false,
         },
       ],
@@ -35,19 +36,15 @@ export default function Pricing() {
       price: 400000,
       list: [
         {
-          word: "6 edited videos",
+          word: services[0][1],
           boolean: true,
         },
         {
-          word: "4 animated content",
+          word: services[1][1],
           boolean: true,
         },
         {
-          word: "Assist with taking the videos.",
-          boolean: true,
-        },
-        {
-          word: "Landing Pages for services rendered",
+          word: services[2],
           boolean: true,
         },
       ],

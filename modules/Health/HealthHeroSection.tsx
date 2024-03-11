@@ -30,9 +30,8 @@ export default function HealthHeroSection() {
               We are creatives who create educational and engaging health
               content for health care providers.
             </h1>
-            <p className="text-sm font-thin opacity-40">
-              I have worked on several projects, which has given me the
-              experience and ability to deliver top-notch results.
+            <p className="text-sm font-thin opacity-60">
+              We shoot and edit the videos.
             </p>
           </div>
           <div className="flex flex-row gap-4 md:flex-row justify-center md:justify-start items-center md:gap-2 mt-4 md:mt-8 mx-auto md:mx-0">
