@@ -3,6 +3,7 @@ import React from "react";
 import { RxHamburgerMenu } from "react-icons/rx";
 import { SideBarMenu } from "../SideBarMenu";
 import Image from "next/image";
+import { TutorialSideBarMenu } from "../TutorialSideBarMenu";
 
 export default function Navbar() {
   return (
@@ -12,7 +13,7 @@ export default function Navbar() {
           <Link href={"/1frame-tutorial"}>
             <div className="relative ">
               <Image
-                src={"/logo/1frame.png"}
+                src={"/Images/1frame_tutor.png"}
                 alt="1frame logo"
                 width={100}
                 height={50}
@@ -34,7 +35,7 @@ export default function Navbar() {
           </div>
         </div>
         <div className="z-10 block md:hidden">
-          <SideBarMenu />
+          <TutorialSideBarMenu />
         </div>
       </div>
     </section>
