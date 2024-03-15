@@ -161,7 +161,7 @@ export default function VideoEditing() {
           <div className="flex flex-col md:flex-row gap-2 justify-center md:items-start items-center w-full  ">
             <div className="w-fit flex justify-center items-center rounded-2xl overflow-clip">
               <Image
-                src={"/images/olalekan.jpeg"}
+                src={"/images/olalekan.webp"}
                 alt="placeholder"
                 width={150}
                 height={150}
