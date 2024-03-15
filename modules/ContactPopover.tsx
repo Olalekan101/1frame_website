@@ -16,7 +16,7 @@ export function ContactPopover() {
       </PopoverTrigger>
       <PopoverContent className="w-fit py-2 px-4 bg-white rounded-2xl overflow-clip">
         <div className="flex gap-4 ">
-          <a href={"https://wa.me/+2347010174548"}>
+          <a href={"https://wa.me/+2348146339697"}>
             <div className="">
               <FaWhatsappSquare className="text-MainPurple size-[20px] md:size-[35px]" />
             </div>

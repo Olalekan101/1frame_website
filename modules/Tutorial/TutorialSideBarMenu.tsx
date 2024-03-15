@@ -21,14 +21,16 @@ export function TutorialSideBarMenu() {
       <SheetContent>
         <div className="grid gap-4 py-4">
           <div className="">
-            <Link href={"/videoediting"}>Video Editing</Link>
+            <a href={"/videoediting"}>Video Editing</a>
           </div>
           <div className="">
-            <Link href={"/2danimation"}>2D Animation</Link>
+            <a href={"/2danimation-motiongraphics"}>
+              2D Animation/Motion Graphics
+            </a>
           </div>
-          <div className="">
-            <Link href={"/font-end"}>Front End</Link>
-          </div>
+          {/* <div className="">
+            <Link href={"/font-end"}></Link>
+          </div> */}
         </div>
         <SheetFooter>
           <SheetClose asChild>

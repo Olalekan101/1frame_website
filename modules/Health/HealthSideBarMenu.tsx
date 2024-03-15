@@ -21,16 +21,16 @@ export function HealthSideBarMenu() {
       <SheetContent>
         <div className="grid gap-4 py-4">
           <div className="">
-            <Link href={"/portfolio"}>Portfolio</Link>
+            <a href={"/portfolio"}>Portfolio</a>
           </div>
           <div className="">
-            <Link href={"/about-health-media"}> About Us</Link>
+            <a href={"/about-health-media"}> About Us</a>
           </div>
           <div className="">
-            <Link href={"/content-calendar"}>Content Calendar</Link>
+            <a href={"/content-calendar"}>Content Calendar</a>
           </div>
           <div className="">
-            <Link href={"/pricing"}> Pricing</Link>
+            <a href={"/pricing"}> Pricing</a>
           </div>
         </div>
         <SheetFooter>

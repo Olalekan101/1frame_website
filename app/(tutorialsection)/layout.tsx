@@ -5,6 +5,7 @@ import Navbar from "@/modules/Navbar";
 import BGshapes from "@/modules/BGshapes";
 import { TbLayoutNavbar } from "react-icons/tb";
 import ToturialNavbar from "@/modules/Tutorial/TutorialNavbar";
+import TutorialFooter from "@/modules/Tutorial/TutorialFooter";
 
 const ibm = Outfit({ subsets: ["latin"], weight: "500" });
 
@@ -24,6 +25,7 @@ export default function RootLayout({
         <BGshapes />
         <ToturialNavbar />
         <main className="grow">{children}</main>
+        <TutorialFooter />
       </body>
     </html>
   );

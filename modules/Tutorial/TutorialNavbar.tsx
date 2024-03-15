@@ -1,9 +1,7 @@
 import Link from "next/link";
 import React from "react";
-import { RxHamburgerMenu } from "react-icons/rx";
-import { SideBarMenu } from "../SideBarMenu";
 import Image from "next/image";
-import { TutorialSideBarMenu } from "../TutorialSideBarMenu";
+import { TutorialSideBarMenu } from "./TutorialSideBarMenu";
 
 export default function Navbar() {
   return (
@@ -28,11 +26,16 @@ export default function Navbar() {
             <Link href={"/videoediting"}>Video Editing</Link>
           </div>
           <div className="">
-            <Link href={"/2danimation"}>2D Animation</Link>
+            <Link href={"/2danimation-motiongraphics"}>
+              2D Animation/Motion Graphics
+            </Link>
           </div>
-          <div className="">
+          {/* <div className="">
+            <Link href={"/motion-graphics"}>Motion Graphics</Link>
+          </div> */}
+          {/* <div className="">
             <Link href={"/font-end"}>Font-end Development</Link>
-          </div>
+          </div> */}
         </div>
         <div className="z-10 block md:hidden">
           <TutorialSideBarMenu />

@@ -25,7 +25,7 @@ export default function TutorialHeroSection() {
         <div className="flex flex-col justify-start items-start w-full h-auto">
           <div className="flex flex-col text-center  gap-2 w-full">
             <p className="text-xs md:text-base pb-2 opacity-50">
-              Video Editing . 2d Animation . Font-end Dev
+              Video Editing . 2d Animation . Motion Design
             </p>
             <h1 className="text-3xl">
               We will take you from a complete beginner to a professional.
