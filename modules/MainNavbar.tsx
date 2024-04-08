@@ -26,11 +26,11 @@ export default function Navbar() {
           <div className="">
             <Link href={"/1frame-tutorial"}>Training</Link>
           </div>
-          <div className="">
+          {/* <div className="">
             <Link href={"/healthmedia"}>Health Media</Link>
-          </div>
+          </div> */}
           <div className="">
-            <Link href={"/about "}> About Us</Link>
+            <Link href={"/about "}> About Me</Link>
           </div>
         </div>
         <div className="z-10 block md:hidden">

@@ -3,6 +3,7 @@ import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import { FaWhatsappSquare } from "react-icons/fa";
 import { PortfolioTopRive } from "@/modules/RiveComponents";
+import Link from "next/link";
 
 export default function VideoEditing() {
   const PATHMAIN = "/tools/";
@@ -78,16 +79,16 @@ export default function VideoEditing() {
           </div>
           <div className="flex gap-2 w-full justify-center items-center py-4">
             <div className="">
-              {/* <Link href={"/videoediting/premierepro-tools"}> */}
-              <Button className="py-2 px-4 rounded-full">
-                Premiere Pro Tools
-              </Button>
-              {/* </Link> */}
+              <Link href={"/videoediting/premierepro-tools"}>
+                <Button className="py-2 px-4 rounded-full">
+                  Premiere Pro Tools
+                </Button>
+              </Link>
             </div>
             <div className="">
-              {/* <Link href={"/videoediting/editing-roadmap"}> */}
-              <Button className="py-2 px-4 rounded-full">Roadmap</Button>
-              {/* </Link> */}
+              <Link href={"/videoediting/editing-roadmap"}>
+                <Button className="py-2 px-4 rounded-full">Roadmap</Button>
+              </Link>
             </div>
           </div>
           <div className="w-full flex flex-col justify-center items-center">

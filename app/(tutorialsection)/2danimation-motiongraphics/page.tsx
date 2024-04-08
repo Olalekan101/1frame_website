@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React from "react";
 
 export default function Animation() {
@@ -7,6 +8,9 @@ export default function Animation() {
         <p className=" text-2xl md:text-4xl opacity-70 font-bold text-center">
           We are currently working on this page
         </p>
+        <div className="py-4">
+          <Link href={"/1frame-tutorial"}>Back</Link>
+        </div>
       </div>
     </section>
   );

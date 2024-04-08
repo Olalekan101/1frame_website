@@ -11,7 +11,7 @@ export default function Navbar() {
           <Link href={"/1frame-tutorial"}>
             <div className="relative ">
               <Image
-                src={"/Images/1frame_tutor.png"}
+                src={"/logo/1frame training.png"}
                 alt="1frame logo"
                 width={100}
                 height={50}
@@ -23,12 +23,10 @@ export default function Navbar() {
 
         <div className="md:flex justify-center items-center hidden gap-4 font-light opacity-70 ">
           <div className="">
-            <Link href={"/videoediting"}>Video Editing</Link>
+            <Link href={"/videoediting"}>Premiere Pro</Link>
           </div>
           <div className="">
-            <Link href={"/2danimation-motiongraphics"}>
-              2D Animation/Motion Graphics
-            </Link>
+            <Link href={"/alight-motion"}>Alight Motion</Link>
           </div>
           {/* <div className="">
             <Link href={"/motion-graphics"}>Motion Graphics</Link>

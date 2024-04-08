@@ -14,10 +14,12 @@ export default function TutorialHeroSection() {
     "ai.png",
     "au.png",
     // "c4d.png",
-    "figma.png",
+    // "figma.png",
     "pr.png",
     "ps.png",
-    "Rive.png",
+    "am.png",
+    "cap.png",
+    // "Rive.png",
   ];
   return (
     <section className="w-screen md:w-full h-auto py-0 md:py-4 relative mt-16">
@@ -28,7 +30,7 @@ export default function TutorialHeroSection() {
               Video Editing . 2d Animation . Motion Design
             </p>
             <h1 className="text-3xl">
-              We will take you from a complete beginner to a professional.
+              I will take you from a complete beginner to a professional.
             </h1>
             <p className="text-sm font-thin opacity-70">
               Time is of the essence, and we make sure you get the necessary
