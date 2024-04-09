@@ -27,7 +27,7 @@ export default function CreatingProject() {
                 />
               </div>
               <div
-                className={`relative w-[70%] md:w-full mx-auto  overflow-clip ${
+                className={`relative w-[70%] md:w-full mx-auto  overflow-clip -mb-14 ${
                   index === 4 ? "-mt-0" : "-mt-8 "
                 }`}
               >
