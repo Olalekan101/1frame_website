@@ -25,13 +25,19 @@ export const CreateProjectData = [
   },
   {
     gif: "/training/Create a Project/frame rate.gif",
-    graphics: "/training/Create a Project/graphics/5.png",
+    graphics: "/training/Create a Project/graphics/5.gif",
     text: [],
     links: [],
   },
   {
     gif: "/training/Create a Project/background.gif",
     graphics: "/training/Create a Project/graphics/6.png",
+    text: [],
+    links: [],
+  },
+  {
+    gif: "/training/Create a Project/custom width and height.gif",
+    graphics: "/training/Create a Project/graphics/7.png",
     text: [],
     links: [],
   },

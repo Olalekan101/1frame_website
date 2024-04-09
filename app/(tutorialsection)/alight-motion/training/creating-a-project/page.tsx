@@ -18,7 +18,7 @@ export default function CreatingProject() {
               key={index}
               className="relative w-full mt-10 flex flex-col justify-center items-center md:flex-row"
             >
-              <div className="relative aspect-video w-full h-fit mx-auto -mb-8">
+              <div className="relative aspect-video w-full h-fit mx-auto mb-2 ">
                 <Image
                   src={data.graphics}
                   alt="project gif"
@@ -26,7 +26,11 @@ export default function CreatingProject() {
                   className="object-contain"
                 />
               </div>
-              <div className="relative w-[70%] md:w-full mx-auto mt-2 overflow-clip">
+              <div
+                className={`relative w-[70%] md:w-full mx-auto  overflow-clip ${
+                  index === 4 ? "-mt-0" : "-mt-8 "
+                }`}
+              >
                 <Image
                   src={data.gif}
                   alt="project gif"

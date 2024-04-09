@@ -2,6 +2,7 @@ import React from "react";
 import Image from "next/image";
 import { ProjectOneData } from "@/data/project_data/project_one/data";
 import { GoDownload } from "react-icons/go";
+import Link from "next/link";
 
 export default function ProjectOne() {
   return (
@@ -32,7 +33,36 @@ export default function ProjectOne() {
           />
         </div>
         <div className="my-4">
-          <p className="font-bold opacity-70 text-2xl">Lets goo</p>
+          <p className="font-bold opacity-70 text-xl">
+            First of all, we need to create a project.
+          </p>
+          <p className="font-bold opacity-70 text-lg">
+            If you don't know how,{" "}
+            <Link
+              href={"../creating-a-project"}
+              className="font-bold italic underline"
+            >
+              click here.
+            </Link>
+          </p>
+        </div>
+        <div className="opacity-70 w-full">
+          <p>The project details are: </p>
+          <ul className="grid grid-cols-2 gap-2 text-sm font-bold">
+            <li>Project name: The Star</li>
+            <li>Aspect ratio: 1:1</li>
+            <li>Resolution: 1080p(FHD)</li>
+            <li>Frame rate: 24 fps</li>
+          </ul>
+        </div>
+        <div className="w-full h-full flex justify-center items-center -mb-20 mt-4">
+          <Image
+            src={"/Images/lets-go.png"}
+            alt="project gif"
+            width={100}
+            height={100}
+            className="object-contain"
+          />
         </div>
         {ProjectOneData.map((data, index) => (
           <div
@@ -47,7 +77,8 @@ export default function ProjectOne() {
                 className="object-contain"
               />
             </div>
-            <div className="relative w-[70%] md:w-full mx-auto mt-2 overflow-clip">
+
+            <div className="relative w-[70%] md:w-full mx-auto mt-2 overflow-clip -mb-10">
               <Image
                 src={data.gif}
                 alt="project gif"
@@ -58,6 +89,29 @@ export default function ProjectOne() {
             </div>
           </div>
         ))}
+        <div className="w-full h-full flex justify-center items-center mt-12">
+          <Image
+            src={"/Images/well-done (1).png"}
+            alt="project gif"
+            width={100}
+            height={100}
+            className="object-contain"
+          />
+        </div>
+        <div className="mt-5 opacity-70 w-full">
+          <p className="text-sm text-center">
+            I hope you learned something. Now try recreating the project on your
+            own.
+          </p>
+          <Link
+            href={"../projects"}
+            className="mx-auto w-full flex justify-center mt-4"
+          >
+            <p className="bg-purple-900 text-yellow-50 px-2 w-fit py-2 rounded-xl">
+              ← Back to training
+            </p>
+          </Link>
+        </div>
       </div>
     </section>
   );

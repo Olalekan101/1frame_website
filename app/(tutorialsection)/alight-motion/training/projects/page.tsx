@@ -6,7 +6,7 @@ export default function Motiongraphics() {
   return (
     <section className="w-screen md:w-full h-auto relative">
       <div className="maincontainer flex flex-col justify-center items-center w-full h-auto">
-        <div className="mt-5 md:mt-10">
+        <div className=" backdrop-blur-2xl bg-purple-500/20 py-5 rounded-b-xl">
           <div className="flex gap-2 justify-center items-center">
             <Image
               src={"/tools/am.png"}
@@ -27,19 +27,19 @@ export default function Motiongraphics() {
           </div>
           <div className="mt-2 grid grid-cols-2 gap-2 overflow-clip">
             <Link
-              className="text-sm w-fit px-2 py-2 rounded-lg bg-purple-900 text-white"
+              className="text-sm w-fit  py-2 bg-purple-600 text-white rounded-xl px-4"
               href={"./creating-a-project"}
             >
               How to Create a project
             </Link>
             <Link
-              className="text-sm px-2 py-2 w-fit bg-purple-900 text-white"
+              className="text-sm px-2 py-2 w-fit bg-purple-600 text-white rounded-xl px-4"
               href={"./creating-a-project"}
             >
               What is a keyframe?
             </Link>
             <Link
-              className="text-sm px-2 py-2 w-fit bg-purple-900 text-white"
+              className="text-sm px-2 py-2 w-fit bg-purple-600 text-white rounded-xl px-4"
               href={"./creating-a-project"}
             >
               What is a graph curve?
@@ -55,14 +55,14 @@ export default function Motiongraphics() {
               href={"./projects/project-one"}
               className="w-full h-full mx-auto"
             >
-              <div className="w-full h-full aspect-square relative mx-auto">
+              <div className="w-full h-full aspect-square relative mx-auto rounded-xl overflow-clip">
                 <Image
                   src={"/training/project-one/rendered/thestargif.gif"}
                   fill
                   alt="gif"
                 />
                 <div className="absolute inset-0 w-full">
-                  <p className="bg-purple-900 w-fit text-white text-xs px-2 py-2">
+                  <p className="bg-cyan-600 w-fit text-white text-xs px-2 py-2 rounded-br-xl">
                     The Star ⭐
                   </p>
                 </div>
@@ -72,15 +72,17 @@ export default function Motiongraphics() {
               href={"./projects/project-one"}
               className="w-full h-full mx-auto"
             >
-              <div className="w-full h-full aspect-square relative mx-auto">
+              <div className="w-full h-full aspect-square relative mx-auto rounded-xl overflow-clip ">
                 <Image
-                  src={"/training/project-one/rendered/thestargif.gif"}
+                  src={
+                    "/training/Travelling arrow/rendered/Traveling arrows.gif"
+                  }
                   fill
                   alt="gif"
                 />
                 <div className="absolute inset-0 w-full">
-                  <p className="bg-purple-900 w-fit text-white text-xs px-2 py-2">
-                    The Travelling
+                  <p className="bg-cyan-600 w-fit text-white text-xs px-2 py-2 rounded-br-xl">
+                    Travelling arrow
                   </p>
                 </div>
               </div>
