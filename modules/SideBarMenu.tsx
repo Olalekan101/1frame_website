@@ -21,11 +21,14 @@ export function SideBarMenu() {
       <SheetContent>
         <div className="grid gap-4 py-4">
           <div className="">
-            <Link href={"/1frame-tutorial"}>Training</Link>
+            <Link href={"/alight-motion"}>Alight Motion Training</Link>
           </div>
           <div className="">
-            <Link href={"/healthmedia"}>Health Media</Link>
+            <Link href={"/about "}> About Me</Link>
           </div>
+          {/* <div className="">
+            <Link href={"/healthmedia"}>Health Media</Link>
+          </div> */}
         </div>
         <SheetFooter>
           <SheetClose asChild>

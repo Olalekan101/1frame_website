@@ -22,9 +22,9 @@ export default function Navbar() {
         </div>
 
         <div className="md:flex justify-center items-center hidden gap-4 font-light opacity-70 ">
-          <div className="">
+          {/* <div className="">
             <Link href={"/videoediting"}>Premiere Pro</Link>
-          </div>
+          </div> */}
           <div className="">
             <Link href={"/alight-motion"}>Alight Motion</Link>
           </div>

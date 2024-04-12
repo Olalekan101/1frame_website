@@ -20,9 +20,9 @@ export function TutorialSideBarMenu() {
       </SheetTrigger>
       <SheetContent>
         <div className="grid gap-4 py-4">
-          <div className="">
+          {/* <div className="">
             <a href={"/videoediting"}>Premiere Pro</a>
-          </div>
+          </div> */}
           <div className="">
             <a href={"/alight-motion"}>Alight Motion</a>
           </div>

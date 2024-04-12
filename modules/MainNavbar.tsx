@@ -14,8 +14,8 @@ export default function Navbar() {
               <Image
                 src={"/logo/1frame.png"}
                 alt="1frame logo"
-                width={100}
-                height={50}
+                width={70}
+                height={30}
                 className=""
               />
             </div>
@@ -24,7 +24,7 @@ export default function Navbar() {
 
         <div className="md:flex justify-center items-center hidden gap-4 font-light opacity-70 ">
           <div className="">
-            <Link href={"/1frame-tutorial"}>Training</Link>
+            <Link href={"/alight-motion"}>Alight Motion Training</Link>
           </div>
           {/* <div className="">
             <Link href={"/healthmedia"}>Health Media</Link>

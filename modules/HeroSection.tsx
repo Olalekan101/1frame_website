@@ -5,6 +5,7 @@ import { FaWhatsappSquare } from "react-icons/fa";
 import Image from "next/image";
 import { ContactPopover } from "./ContactPopover";
 import { healthcareProviderData } from "@/data/sitedata";
+import { PortfolioTopRive } from "./RiveComponents";
 
 export default function HeroSection() {
   const PATHMAIN = "/tools/";
@@ -26,29 +27,36 @@ export default function HeroSection() {
             <p className="text-xs md:text-base pb-2 opacity-50">
               Video Editing . Motion Design . 2D Animation
             </p>
-            <h1 className="text-3xl">We are creatives.</h1>
+            <h1 className="text-3xl text-center">
+              We provide valuable training at no cost.
+            </h1>
+            <p className="text-lg opacity-40 md:mt-3 text-center">
+              All you need is the discipline to do the training and gain
+              valuable skills.
+            </p>
           </div>
-          {/* <div className="flex flex-col md:flex-row justify-center md:justify-start items-center gap-2 mt-8 mx-auto md:mx-0">
-            <div className="z-10">
-              <ContactPopover />
-            </div>
-            <div className="">
-              <Link href={"/portfolio"}>
-                <p className="opacity-80 underline">Check out our portfolio</p>
-              </Link>
-            </div>
-          </div> */}
         </div>
 
-        <div className="w-full h-[200px] z-20 relative flex justify-center items-start gap-4 overflow-clip bg-MainPurple mt-10 rounded-xl">
-          {/* <div className="absolute  aspect-video w-[90%] border-2  rounded-xl overflow-clip ">
-            <Image
-              src={"/Images/Hero_Image.webp"}
-              fill
-              alt="placeholder"
-              className="object-contain h-full w-full"
-            />
-          </div> */}
+        <div className=" h-[100px] md:h-[200px] w-full flex justify-center items-center">
+          <PortfolioTopRive />
+        </div>
+        <div className="w-full flex justify-center items-start">
+          <Link
+            href={"/alight-motion"}
+            className="hover:bg-white/30 duration-100 ease-in-out overflow-clip"
+          >
+            <div className="flex gap-2 border-2 border-white/40 rounded-xl px-4 py-4 hover:bg-white/30 duration-100 ease-in-out">
+              <Image
+                src={"/tools/am.png"}
+                alt="alight motion logo"
+                width={30}
+                height={30}
+              />
+              <p className="font-bold opacity-70 text-2xl ">
+                Alight Motion Training
+              </p>
+            </div>
+          </Link>
         </div>
       </div>
     </section>
