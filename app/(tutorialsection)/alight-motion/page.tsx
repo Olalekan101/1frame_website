@@ -78,8 +78,12 @@ export default function Motiongraphics() {
           </div>
         </div>
         <div className="flex flex-col justify-center items-center w-full mt-5">
-          <p className="font-bold text-sm md:text-lg opacity-70 py-2 text-center w-full md:mb-4 mb-2">
-            Lessons for Beginners
+          <p className="font-bold text-sm md:text-lg opacity-70 py-2 text-center w-full ">
+            Level 1
+          </p>
+          <p className="text-xs opacity-70 md:mb-4 mb-4">
+            This level is meant to show you the ins and outs of alight motion.
+            and the basics of animations
           </p>
           <div className="w-full grid md:grid-cols-3 grid-cols-2 gap-2">
             <ProjectGifWarpper
@@ -106,6 +110,21 @@ export default function Motiongraphics() {
               linkx="/alight-motion/training/projects/project-one"
               gif="/training/Mood Swing/rendered/Mood Swings.gif"
               title=" Mood Swings"
+            />
+          </div>
+        </div>
+        <div className="flex flex-col justify-center items-center w-full mt-5">
+          <p className="font-bold text-sm md:text-lg opacity-70 py-2 text-center w-full ">
+            Level 2
+          </p>
+          <p className="text-xs opacity-70 md:mb-4 mb-4">
+            Here we touch on some pretty advanced concepts.
+          </p>
+          <div className="w-full grid md:grid-cols-3 grid-cols-2 gap-2">
+            <ProjectGifWarpper
+              linkx="/alight-motion/training/projects/project-one"
+              gif="/training/Fruit Salad/rendered/Fruit salad.gif"
+              title=" Fruit Salad"
             />
           </div>
         </div>

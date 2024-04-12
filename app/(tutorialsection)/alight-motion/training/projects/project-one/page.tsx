@@ -14,8 +14,8 @@ export default function TravellingArrows() {
       <ProjectWrapper
         projectdetails={["The Star", "1:1", "1080p(FHD)", "24 fps"]}
         projectdownloadlink="https://alight.link/Xs1p3owTiRCshiEy5"
-        projectgif="/training/project-one/rendered/thestargif.gif"
-        projectname="The Star ⭐"
+        projectgif="/training/Travelling arrow/rendered/Traveling arrows.gif"
+        projectname="Travelling Arrow"
       >
         <p className="font-bold opacity-70 text-xl">
           First of all, we need to create a project.
