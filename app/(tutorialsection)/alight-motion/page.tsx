@@ -92,22 +92,22 @@ export default function Motiongraphics() {
               title=" The Star ⭐"
             />
             <ProjectGifWarpper
-              linkx="/alight-motion/training/projects/project-one"
+              linkx="/alight-motion/training/projects/travelling-arrows"
               gif="/training/Travelling arrow/rendered/Traveling arrows.gif"
               title=" Travelling arrow"
             />
             <ProjectGifWarpper
-              linkx="/alight-motion/training/projects/project-one"
-              gif="/training/Bouncing Ball/rendered/Bouncing Ball preview.gif"
+              linkx="/alight-motion/training/projects/bouncing-ball"
+              gif="/training/Bouncing Ball/rendered/Bouncing Ball.gif"
               title=" Bouncing Ball ⚽"
             />
             <ProjectGifWarpper
-              linkx="/alight-motion/training/projects/project-one"
+              linkx="/alight-motion/training/projects/car-race"
               gif="/training/Car Race/rendered/Car race.gif"
               title=" Car Race 🚗"
             />
             <ProjectGifWarpper
-              linkx="/alight-motion/training/projects/project-one"
+              linkx="/alight-motion/training/projects/mood-swing"
               gif="/training/Mood Swing/rendered/Mood Swings.gif"
               title=" Mood Swings"
             />
@@ -122,7 +122,7 @@ export default function Motiongraphics() {
           </p>
           <div className="w-full grid md:grid-cols-3 grid-cols-2 gap-2">
             <ProjectGifWarpper
-              linkx="/alight-motion/training/projects/project-one"
+              linkx="/alight-motion/training/projects/fruit-salad"
               gif="/training/Fruit Salad/rendered/Fruit salad.gif"
               title=" Fruit Salad"
             />

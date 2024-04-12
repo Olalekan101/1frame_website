@@ -8,14 +8,14 @@ import { GoDownload } from "react-icons/go";
 import Link from "next/link";
 import { ProjectList, ProjectWrapper } from "@/modules/ProjectTrainingWapper";
 
-export default function TravellingArrows() {
+export default function BouncingBall() {
   return (
     <>
       <ProjectWrapper
         projectdetails={["The Star", "1:1", "1080p(FHD)", "24 fps"]}
         projectdownloadlink="https://alight.link/Xs1p3owTiRCshiEy5"
-        projectgif="/training/Travelling arrow/rendered/Traveling arrows.gif"
-        projectname="Travelling Arrow"
+        projectgif="/training/Bouncing Ball/rendered/Bouncing Ball.gif"
+        projectname=" Bouncing Ball ⚽"
       >
         <p className="font-bold opacity-70 text-xl">
           First of all, we need to create a project.
