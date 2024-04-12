@@ -43,16 +43,16 @@ export default function HeroSection() {
         <div className="w-full flex justify-center items-start">
           <Link
             href={"/alight-motion"}
-            className="hover:bg-white/30 duration-100 ease-in-out overflow-clip"
+            className="hover:bg-white/30 duration-100 ease-in-out overflow-clip w-fit"
           >
-            <div className="flex gap-2 border-2 border-white/40 rounded-xl px-4 py-4 hover:bg-white/30 duration-100 ease-in-out">
+            <div className="flex w-fit justify-center items-center gap-4 border-2 border-white/40 rounded-xl px-4 py-2 hover:bg-white/30 duration-100 ease-in-out">
               <Image
                 src={"/tools/am.png"}
                 alt="alight motion logo"
                 width={30}
                 height={30}
               />
-              <p className="font-bold opacity-70 text-2xl ">
+              <p className="font-bold opacity-70 text-xl w-fit ">
                 Alight Motion Training
               </p>
             </div>

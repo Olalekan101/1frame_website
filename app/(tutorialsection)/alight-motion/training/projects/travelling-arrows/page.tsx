@@ -1,14 +1,11 @@
 import React from "react";
 import Image from "next/image";
-import {
-  ProjectArrowPartOne,
-  ProjectArrowPartTwo,
-} from "@/data/project_data/travelling_arrows/data";
+import { ProjectOneData } from "@/data/project_data/project_one/data";
 import { GoDownload } from "react-icons/go";
 import Link from "next/link";
 import { ProjectList, ProjectWrapper } from "@/modules/ProjectTrainingWapper";
 
-export default function TravellingArrows() {
+export default function ProjectOne() {
   return (
     <>
       <ProjectWrapper
@@ -30,11 +27,7 @@ export default function TravellingArrows() {
           </Link>
         </p>
       </ProjectWrapper>
-      <ProjectList ProjectData={ProjectArrowPartOne} toggle={false} />
-      <div className="mt-20 -mb-20 flex justify-center items-center">
-        <Image src={"/Images/two.png"} alt="images" width={50} height={50} />
-      </div>
-      <ProjectList ProjectData={ProjectArrowPartTwo} toggle />
+      <ProjectList ProjectData={ProjectOneData} toggle />
     </>
   );
 }

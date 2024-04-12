@@ -31,7 +31,7 @@ export default function Motiongraphics() {
   return (
     <section className="w-screen md:w-full h-auto relative">
       <div className="maincontainer flex flex-col justify-center items-center w-full h-auto">
-        <div className=" backdrop-blur-2xl bg-purple-500/20 py-5 rounded-b-xl">
+        <div className=" backdrop-blur-2xl py-5 rounded-b-xl">
           <div className="flex gap-2 justify-center items-center">
             <Image
               src={"/tools/am.png"}
@@ -41,7 +41,7 @@ export default function Motiongraphics() {
             />
             <p>ALIGHT MOTION TRAINING</p>
           </div>
-          <p className="text-base opacity-70 mt-2 text-center ">
+          <p className="text-sm opacity-70 mt-2 text-center ">
             These lessons are carefully planned. Take your time and practice
             them.
           </p>
