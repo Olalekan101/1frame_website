@@ -8,7 +8,7 @@ export const ToLearnWarpper = ({ linkx, title }: any) => {
       className="text-sm w-full hover:bg-white/45  py-2 border-2 border-white/45  text-white rounded-xl px-4"
       href={linkx}
     >
-      {title}
+      <p className="opacity-75">{title}</p>
     </Link>
   );
 };
@@ -52,27 +52,27 @@ export default function Motiongraphics() {
           </div>
           <div className="mt-2 grid grid-cols-2 gap-2 overflow-clip w-fit">
             <ToLearnWarpper
-              linkx="./creating-a-project"
+              linkx="/alight-motion/training/creating-a-project"
               title="How to create a project"
             />
             <ToLearnWarpper
-              linkx="./creating-a-project"
+              linkx="/alight-motion/training/creating-a-project"
               title="What is an element"
             />
             <ToLearnWarpper
-              linkx="./creating-a-project"
+              linkx="/alight-motion/training/creating-a-project"
               title="What is a keyframe?"
             />
             <ToLearnWarpper
-              linkx="./creating-a-project"
+              linkx="/alight-motion/training/creating-a-project"
               title="What is a graph curve?"
             />
             <ToLearnWarpper
-              linkx="./creating-a-project"
+              linkx="/alight-motion/training/creating-a-project"
               title="Power of Group"
             />
             <ToLearnWarpper
-              linkx="./creating-a-project"
+              linkx="/alight-motion/training/creating-a-project"
               title="Concept of Parenting"
             />
           </div>
@@ -89,27 +89,27 @@ export default function Motiongraphics() {
             <ProjectGifWarpper
               linkx="/alight-motion/training/projects/project-one"
               gif="/training/project-one/rendered/thestargif.gif"
-              title=" The Star ⭐"
+              title="The Star ⭐"
             />
             <ProjectGifWarpper
               linkx="/alight-motion/training/projects/travelling-arrows"
               gif="/training/Travelling arrow/rendered/Traveling arrows.gif"
-              title=" Travelling arrow"
+              title="Travelling arrow"
             />
             <ProjectGifWarpper
               linkx="/alight-motion/training/projects/bouncing-ball"
               gif="/training/Bouncing Ball/rendered/Bouncing Ball.gif"
-              title=" Bouncing Ball ⚽"
+              title="Bouncing Ball ⚽"
             />
             <ProjectGifWarpper
               linkx="/alight-motion/training/projects/car-race"
               gif="/training/Car Race/rendered/Car race.gif"
-              title=" Car Race 🚗"
+              title="Car Race 🚗"
             />
             <ProjectGifWarpper
               linkx="/alight-motion/training/projects/mood-swing"
               gif="/training/Mood Swing/rendered/Mood Swings.gif"
-              title=" Mood Swings"
+              title="Mood Swings"
             />
           </div>
         </div>
