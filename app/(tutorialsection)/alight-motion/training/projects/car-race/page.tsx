@@ -30,11 +30,11 @@ export default function CarRace() {
           </Link>
         </p>
       </ProjectWrapper>
-      <ProjectList ProjectData={ProjectArrowPartOne} toggle={false} />
-      <div className="mt-20 -mb-20 flex justify-center items-center">
-        <Image src={"/Images/two.png"} alt="images" width={50} height={50} />
-      </div>
-      <ProjectList ProjectData={ProjectArrowPartTwo} toggle />
+      <ProjectList
+        slidelink={
+          "https://docs.google.com/presentation/d/e/2PACX-1vSZIx8iXgqU87NsYhtJI-KbStMw0xUluhU44xyaHYb8M2G8wQ2jqHEU_D9WcvOgbGZyiH_TkdQN1HWn/embed?start=false&loop=false&delayms=10000"
+        }
+      />
     </>
   );
 }

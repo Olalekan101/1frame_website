@@ -14,34 +14,23 @@ export default function ProjectOne() {
         projectgif="/training/project-one/rendered/thestargif.gif"
         projectname="The Star ⭐"
       >
-        <p className="font-bold opacity-70 text-xl">
-          First of all, we need to create a project.
-        </p>
-        <p className="font-bold opacity-70 text-lg">
-          If you don't know how,{" "}
+        <div className="w-full flex flex-col justify-start items-center">
+          <p className="opacity-70 text-xs">
+            What you need to know before starting
+          </p>
           <Link
             href={"../creating-a-project"}
-            className="font-bold italic underline"
+            className="font-bold italic underline text-xs border-2 border-white/40 rounded-xl px-4 py-2 flex justify-start items-center mt-2 hover:bg-white/30"
           >
-            click here.
+            <p className="opacity-70">How to create a project</p>
           </Link>
-        </p>
-      </ProjectWrapper>
-      {/* <ProjectList ProjectData={ProjectOneData} toggle /> */}
-      <section className="mt-20 border-b-[1px] border-b-slate-100/50 w-full py-4  ">
-        <div className="maincontainer relative flex justify-center items-center">
-          <iframe
-            src="https://docs.google.com/presentation/d/e/2PACX-1vSZIx8iXgqU87NsYhtJI-KbStMw0xUluhU44xyaHYb8M2G8wQ2jqHEU_D9WcvOgbGZyiH_TkdQN1HWn/embed?start=false&loop=false&delayms=10000"
-            frameBorder="0"
-            width="320"
-            height="500"
-            allowFullScreen={true}
-            // mozAllowFullScreen={true}
-            // webkitAllowFullScreen={true}
-            className="bg-white mx-auto"
-          ></iframe>
         </div>
-      </section>
+      </ProjectWrapper>
+      <ProjectList
+        slidelink={
+          "https://docs.google.com/presentation/d/e/2PACX-1vSZIx8iXgqU87NsYhtJI-KbStMw0xUluhU44xyaHYb8M2G8wQ2jqHEU_D9WcvOgbGZyiH_TkdQN1HWn/embed?start=false&loop=false&delayms=10000"
+        }
+      />
     </>
   );
 }

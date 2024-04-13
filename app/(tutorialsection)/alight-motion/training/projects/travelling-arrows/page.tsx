@@ -17,7 +17,7 @@ export default function TravellingArrows() {
         projectgif="/training/Travelling arrow/rendered/Traveling arrows.gif"
         projectname="Travelling Arrow"
       >
-        <p className="font-bold opacity-70 text-xl">
+        {/* <p className="font-bold opacity-70 text-xl">
           First of all, we need to create a project.
         </p>
         <p className="font-bold opacity-70 text-lg">
@@ -28,13 +28,22 @@ export default function TravellingArrows() {
           >
             click here.
           </Link>
-        </p>
+        </p> */}
+        <div className="w-full flex flex-col justify-center items-center gap-4">
+          <p className="opacity-70 text-xs">What you need to know</p>
+          <Link
+            href={"../creating-a-project"}
+            className="font-bold italic underline text-xs border-2 border-white/40 rounded-xl px-4 py-2 flex justify-start items-center"
+          >
+            <p>How to create a project</p>
+          </Link>
+        </div>
       </ProjectWrapper>
-      <ProjectList ProjectData={ProjectArrowPartOne} toggle={false} />
-      <div className="mt-20 -mb-20 flex justify-center items-center">
-        <Image src={"/Images/two.png"} alt="images" width={50} height={50} />
-      </div>
-      <ProjectList ProjectData={ProjectArrowPartTwo} toggle />
+      <ProjectList
+        slidelink={
+          "https://docs.google.com/presentation/d/e/2PACX-1vSiX-9CVYCfTosodCLeznGmUN-m4rfw28B8GoL2cUOx0xErPCDpNIJgDlv9HIVo_rOe5mxLitFUZ42K/embed?start=false&loop=false&delayms=3000"
+        }
+      />
     </>
   );
 }

@@ -12,19 +12,25 @@ interface ProjectWrapperProps {
   projectdetails: string[];
 }
 interface ProjectListProps {
-  ProjectData: any;
-  toggle: boolean;
+  slidelink: string;
 }
 
-export const ProjectList: React.FC<ProjectListProps> = ({
-  ProjectData,
-  toggle = true,
-}) => {
+export const ProjectList: React.FC<ProjectListProps> = ({ slidelink }) => {
   return (
     <>
-      <section className="w-screen md:w-full h-auto relative">
-        <div className="maincontainer mt-5 md:mt-10 flex flex-col justify-center items-center w-full h-auto">
-          {ProjectData.map((data: any, index: number) => (
+      <section className="w-full md:w-full h-auto relative">
+        <div className="maincontainer  flex flex-col relative justify-center items-center w-full h-auto">
+          <iframe
+            src={slidelink}
+            frameBorder="0"
+            width="300"
+            height="500"
+            allowFullScreen={true}
+            // mozAllowFullScreen={true}
+            // webkitAllowFullScreen={true}
+            className="bg-white"
+          ></iframe>
+          {/* {ProjectData.map((data: any, index: number) => (
             <div
               key={index}
               className="relative w-full mt-10 flex flex-col justify-center items-center md:flex-row"
@@ -75,7 +81,7 @@ export const ProjectList: React.FC<ProjectListProps> = ({
                 </Link>
               </div>
             </>
-          ) : null}
+          ) : null} */}
         </div>
       </section>
     </>
@@ -109,11 +115,11 @@ export const ProjectWrapper: React.FC<ProjectWrapperProps> = ({
             A preview of what we are building
           </p>
         </div>
-        <div className="w-full h-full aspect-square relative ">
+        <div className="w-full md:w-[50%] h-full aspect-square relative ">
           <Image src={projectgif} fill alt="gif" />
         </div>
         <div className="my-4">{children}</div>
-        <div className="opacity-70 w-full px-4 border-2 border-white/45 rounded-xl py-4">
+        {/* <div className="opacity-70 w-full px-4 border-2 border-white/45 rounded-xl py-4">
           <p>The project details are: </p>
           <ul className="grid grid-cols-2 gap-2 text-xs mt-2 font-bold">
             <li>Project name: {projectdetails[0]}</li>
@@ -121,8 +127,8 @@ export const ProjectWrapper: React.FC<ProjectWrapperProps> = ({
             <li>Resolution: {projectdetails[2]}</li>
             <li>Frame rate: {projectdetails[3]}</li>
           </ul>
-        </div>
-        <div className="w-full h-full flex justify-center items-center -mb-20 mt-4">
+        </div> */}
+        <div className="w-full h-full flex justify-center items-center mt-4">
           <Image
             src={"/Images/lets-go.png"}
             alt="project gif"
