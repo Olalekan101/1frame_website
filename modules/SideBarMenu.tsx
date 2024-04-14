@@ -24,7 +24,7 @@ export function SideBarMenu() {
             <Link href={"/alight-motion"}>Alight Motion Training</Link>
           </div>
           <div className="">
-            <Link href={"/about "}> About Me</Link>
+            <a href={"/about "}> About Us</a>
           </div>
           {/* <div className="">
             <Link href={"/healthmedia"}>Health Media</Link>

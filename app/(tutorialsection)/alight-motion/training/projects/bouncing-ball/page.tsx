@@ -17,22 +17,19 @@ export default function BouncingBall() {
         projectgif="/training/Bouncing Ball/rendered/Bouncing Ball.gif"
         projectname=" Bouncing Ball ⚽"
       >
-        <p className="font-bold opacity-70 text-xl">
-          First of all, we need to create a project.
-        </p>
-        <p className="font-bold opacity-70 text-lg">
-          If you don't know how,{" "}
+        <div className="w-full flex flex-col justify-center items-center gap-4">
+          <p className="opacity-70 text-xs">What you need to know</p>
           <Link
             href={"../creating-a-project"}
-            className="font-bold italic underline"
+            className="font-bold italic underline text-xs border-2 border-white/40 rounded-xl px-4 py-2 flex justify-start items-center"
           >
-            click here.
+            <p>How to create a project</p>
           </Link>
-        </p>
+        </div>
       </ProjectWrapper>
       <ProjectList
         slidelink={
-          "https://docs.google.com/presentation/d/e/2PACX-1vSZIx8iXgqU87NsYhtJI-KbStMw0xUluhU44xyaHYb8M2G8wQ2jqHEU_D9WcvOgbGZyiH_TkdQN1HWn/embed?start=false&loop=false&delayms=10000"
+          "https://docs.google.com/presentation/d/e/2PACX-1vTn-moy8m2gBsV_8Sc6SJzpHpa_p6_GiHl1st1xPRi-g-Xanzyze3Syp8N4gClUYITQgqelXL6Tt6fO/embed?start=false&loop=false&delayms=3000"
         }
       />
     </>

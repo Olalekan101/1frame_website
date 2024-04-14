@@ -46,36 +46,26 @@ export default function Motiongraphics() {
             them.
           </p>
         </div>
-        <div className="mt-5 w-full mx-auto flex justify-center items-center flex-col">
-          <div className="">
-            <p className="opacity-70">Basic Concepts You Need to Know</p>
-          </div>
-          <div className="mt-2 grid grid-cols-2 gap-2 overflow-clip w-fit">
-            <ToLearnWarpper
-              linkx="/alight-motion/training/creating-a-project"
-              title="How to create a project"
-            />
-            <ToLearnWarpper
-              linkx="/alight-motion/training/creating-a-project"
-              title="What is an element"
-            />
-            <ToLearnWarpper
-              linkx="/alight-motion/training/creating-a-project"
-              title="What is a keyframe?"
-            />
-            <ToLearnWarpper
-              linkx="/alight-motion/training/creating-a-project"
-              title="What is a graph curve?"
-            />
-            <ToLearnWarpper
-              linkx="/alight-motion/training/creating-a-project"
-              title="Power of Group"
-            />
-            <ToLearnWarpper
-              linkx="/alight-motion/training/creating-a-project"
-              title="Concept of Parenting"
-            />
-          </div>
+        <div className="mt-2 w-fit flex justify-center items-center border-2 px-4 py-2 rounded-full border-white hover:opacity-40 bg-purple-800 text-white">
+          <a href={"https://wa.me/+2348146339697"} target="_blank" className="">
+            <p className="opacity-70 text-sm text-center">
+              Click to join the online class.
+            </p>
+          </a>
+        </div>
+        <div className="mt-2 border-2 border-white/40 rounded-full hover:bg-white/35 px-4 py-2 flex justify-center items-center">
+          <Link href="/alight-motion/training/basic-concept" className="">
+            <p className="opacity-70 text-sm text-center">
+              Basic Concepts You Need to Know
+            </p>
+          </Link>
+        </div>
+
+        <div className="mt-5">
+          <p className="opacity-70 text-sm text-center">
+            A step-by-step guide is provided on how to create those projects.
+            Click on one and get started.
+          </p>
         </div>
         <div className="flex flex-col justify-center items-center w-full mt-5">
           <p className="font-bold text-sm md:text-lg opacity-70 py-2 text-center w-full ">
