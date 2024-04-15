@@ -6,16 +6,23 @@ import Link from "next/link";
 
 interface ProjectWrapperProps {
   projectname: string;
-  projectdownloadlink: string;
+
   projectgif: string;
   children: React.ReactNode;
-  projectdetails: string[];
+  // projectdetails: string[];
 }
 interface ProjectListProps {
+  projectdownloadlink: string;
   slidelink: string;
 }
-
-export const ProjectList: React.FC<ProjectListProps> = ({ slidelink }) => {
+interface ToKnowBtnProps {
+  link: string;
+  title: string;
+}
+export const ProjectList: React.FC<ProjectListProps> = ({
+  slidelink,
+  projectdownloadlink,
+}) => {
   return (
     <>
       <section className="w-full md:w-full h-auto relative">
@@ -30,6 +37,15 @@ export const ProjectList: React.FC<ProjectListProps> = ({ slidelink }) => {
             // webkitAllowFullScreen={true}
             className="bg-white"
           ></iframe>
+          <div className=" mt-5">
+            <a
+              href={projectdownloadlink}
+              className="text-sm opacity-70 flex justify-center items-center gap-2"
+            >
+              Download the finished project.
+              <GoDownload />
+            </a>
+          </div>
           {/* {ProjectData.map((data: any, index: number) => (
             <div
               key={index}
@@ -88,12 +104,21 @@ export const ProjectList: React.FC<ProjectListProps> = ({ slidelink }) => {
   );
 };
 
+export const ToKnowBtn: React.FC<ToKnowBtnProps> = ({ link, title }) => {
+  return (
+    <Link
+      href={link}
+      className="font-bold italic underline text-xs border-2 border-white/40 rounded-xl px-4 py-2 flex justify-start items-center mt-2 hover:bg-white/30"
+    >
+      <p className="opacity-70">{title}</p>
+    </Link>
+  );
+};
+
 export const ProjectWrapper: React.FC<ProjectWrapperProps> = ({
   projectname,
-  projectdownloadlink,
   projectgif,
   children,
-  projectdetails,
 }) => {
   return (
     <section className="w-screen md:w-full h-auto relative">
@@ -102,23 +127,26 @@ export const ProjectWrapper: React.FC<ProjectWrapperProps> = ({
           {/* <p className="text-sm opacity-75 font-bold">Project One</p> */}
           <div className="flex flex-col gap-2 justify-center items-center">
             <p className="text-xl opacity-75 font-bold">{projectname}</p>
-            <a
-              href={projectdownloadlink}
-              className="text-sm opacity-70 flex justify-center items-center gap-2"
-            >
-              Download Project <GoDownload />
-            </a>
           </div>
         </div>
         <div className="flex justify-start items-center w-full md:w-[50%] relative mt-5">
-          <p className=" w-full text-white text-xs md:text-xl py-2 opacity-70">
+          <p className=" w-full text-white text-xs md:text-xl py-2 opacity-70 text-center">
             A preview of what we are building
           </p>
         </div>
         <div className="w-full md:w-[50%] h-full aspect-square relative ">
           <Image src={projectgif} fill alt="gif" />
         </div>
-        <div className="my-4">{children}</div>
+        <div className="my-4">
+          <div className="w-full flex flex-col justify-start items-center">
+            <p className="opacity-70 text-xs">
+              What you need to know before starting
+            </p>
+            <div className="w-full flex flex-col gap-2 justify-center items-center mx-auto mt-2">
+              {children}
+            </div>
+          </div>
+        </div>
         {/* <div className="opacity-70 w-full px-4 border-2 border-white/45 rounded-xl py-4">
           <p>The project details are: </p>
           <ul className="grid grid-cols-2 gap-2 text-xs mt-2 font-bold">

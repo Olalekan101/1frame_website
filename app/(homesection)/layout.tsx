@@ -9,7 +9,7 @@ const ibm = Outfit({ subsets: ["latin"], weight: "500" });
 
 export const metadata: Metadata = {
   title: "1Frame",
-  description: "Professional Video Editor and Motion Graphics Designer",
+  description: "House of Quality Training",
 };
 
 export default function RootLayout({
