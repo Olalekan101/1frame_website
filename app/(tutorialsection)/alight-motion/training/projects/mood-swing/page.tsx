@@ -27,7 +27,7 @@ export default function MoodSwing() {
       <ProjectList
         projectdownloadlink="https://alight.link/N4xe11YiqwY3vW5V8"
         slidelink={
-          "https://docs.google.com/presentation/d/e/2PACX-1vSZIx8iXgqU87NsYhtJI-KbStMw0xUluhU44xyaHYb8M2G8wQ2jqHEU_D9WcvOgbGZyiH_TkdQN1HWn/embed?start=false&loop=false&delayms=10000"
+          "https://docs.google.com/presentation/d/e/2PACX-1vRk5cEnsFXUhBzB7ZC3js23bbuJB8_QWSM9ej1yqO9IwHH69rlvRwkSINU31XbjmOxQT397MWWnDxh8/embed?start=false&loop=false&delayms=3000"
         }
       />
     </>

@@ -124,7 +124,7 @@ export default function Motiongraphics() {
             <ProjectGifWarpper
               linkx="/alight-motion/training/projects/sam-x"
               gif="/training/Sam X/rendered/Sam X.gif"
-              title=" Fruit Salad"
+              title="Sam X"
             />
           </div>
         </div>
