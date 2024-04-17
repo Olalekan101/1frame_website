@@ -101,6 +101,11 @@ export default function Motiongraphics() {
               gif="/training/Mood Swing/rendered/Mood Swings.gif"
               title="Mood Swings"
             />
+            <ProjectGifWarpper
+              linkx="/alight-motion/training/projects/ping-pong"
+              gif="/training/Ping Pong/rendered/Ping Pong.gif"
+              title="Ping Pong"
+            />
           </div>
         </div>
         <div className="flex flex-col justify-center items-center w-full mt-5">
@@ -114,6 +119,11 @@ export default function Motiongraphics() {
             <ProjectGifWarpper
               linkx="/alight-motion/training/projects/fruit-salad"
               gif="/training/Fruit Salad/rendered/Fruit salad.gif"
+              title=" Fruit Salad"
+            />
+            <ProjectGifWarpper
+              linkx="/alight-motion/training/projects/sam-x"
+              gif="/training/Sam X/rendered/Sam X.gif"
               title=" Fruit Salad"
             />
           </div>
